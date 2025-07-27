@@ -23,7 +23,7 @@ ADMIN_IDS = [6302016869]  # Replace with your admin user ID(s)
 DATABASE_NAME = "bot_users.db"
 
 # Initialize bot
-bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAFy04NnRevBHs-HzdMtl8QpfUHSkcO0TOA")
+bot = telebot.TeleBot(os.getenv("7558578299:AAHNP75I2g0y3PfcXuVCb6CiMmheLun_7QQ") )
 
 # Initialize database with enhanced tables
 def init_db():
