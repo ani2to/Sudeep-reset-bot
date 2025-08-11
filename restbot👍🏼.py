@@ -22,7 +22,7 @@ BACKUP_CHANNEL_LINK = "https://t.me/ScammerFuk"
 ADMIN_IDS = [6302016869]  # Replace with your admin user ID(s)
 DATABASE_NAME = "bot_users.db"
 
-bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAENmVU8RysxMpEuNS7yxpQ_f03K7xumELQ")
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAEx44eQtiqqfQEk8qcnggF1AfkCKzpN_PA")
 
 # Initialize database with enhanced tables
 def init_db():
