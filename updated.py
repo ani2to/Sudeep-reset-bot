@@ -25,7 +25,7 @@ BOT_REDIRECT_LINK = "https://t.me/ScammerFuk"
 ADMIN_IDS = [6302016869]
 DATABASE_NAME = "bot_users.db"
 
-bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAEx44eQtiqqfQEk8qcnggF1AfkCKzpN_PA")
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAFG_-c5VHTkJvc_n179h2CKGBBWOUqDxpc")
 
 # Initialize database with proper error handling and migration
 def init_db():
@@ -51,7 +51,7 @@ def init_db():
         # Add missing columns if they don't exist
         if 'date_added' not in columns:
             cursor.execute('ALTER TABLE users ADD COLUMN date_added TEXT')
-    
+    7558578299
     # Create usage_stats table if it doesn't exist
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS usage_stats (
