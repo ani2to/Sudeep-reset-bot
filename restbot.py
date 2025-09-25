@@ -15,7 +15,7 @@ from telebot import apihelper
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Configuration
+# Configurati
 CHANNEL_LINK = "https://t.me/Aniredirect"
 BACKUP_CHANNEL_LINK = "https://t.me/ScammerFuk"
 ADMIN_IDS = [6302016869]  # Replce with your admin user ID(s)
