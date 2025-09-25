@@ -12,7 +12,6 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telebot import apihelper
 
-# Configure logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -22,9 +21,12 @@ BACKUP_CHANNEL_LINK = "https://t.me/ScammerFuk"
 ADMIN_IDS = [6302016869]  # Replace with your admin user ID(s)
 DATABASE_NAME = "bot_users.db"
 
-# Initialize bot
-bot = telebot.TeleBot(os.getenv("BOT_TOKEN") or "7558578299:AAFy04NnRevBHs-HzdMtl8QpfUHSkcO0TOA")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+if not BOT_TOKEN:
+    logger.error("BOT_TOKEN environment variable not set!")
+    exit(1)
 
+bot = telebot.TeleBot(BOT_TOKEN)
 # Initialize database with enhanced tables
 def init_db():
     conn = sqlite3.connect(DATABASE_NAME)
