@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # Configuration
 CHANNEL_LINK = "https://t.me/Aniredirect"
 BACKUP_CHANNEL_LINK = "https://t.me/ScammerFuk"
-ADMIN_IDS = [6302016869]  # Replace with your admin user ID(s)
+ADMIN_IDS = [6302016869]  # Replce with your admin user ID(s)
 DATABASE_NAME = "bot_users.db"
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
